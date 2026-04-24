@@ -48,7 +48,7 @@ class DashboardPage extends BasePage {
     await this.page.click('button:has-text("Saved Jobs")');
      await this.scrollDown();
     await this.page.waitForTimeout(1000);
-    await this.scrollUp();
+    // await this.scrollUp();
     await this.page.waitForTimeout(1000);
     // await page.getByRole('button', { name: 'Apply Now' }).first().click();
     // await page.locator('button').filter({ hasText: /^Apply Now$/ }).click();
