@@ -19,14 +19,9 @@ class JobPage1 {
     // =========================
     // Resume Upload Flow
     // =========================
-const acceptBtn = this.page.getByRole('button', { name: /accept/i });
+await this.page.getByRole('button', { name: 'Accept' }).click();
 
-if (await acceptBtn.count() > 0 && await acceptBtn.isVisible()) {
-  await acceptBtn.click();
-}
-await this.page.waitForTimeout(40000);
- await this.page
-    .locator('input[value="apply-with-jump-recruiter-resume"]').click();
+   await this.page.locator('div').filter({ hasText: /^Upload Your ResumeSelect and attach your own updated file\.$/ }).first().click();
    await this.page.waitForTimeout(1000);
 
     // Click upload button (opens file input internally)
@@ -37,7 +32,7 @@ await this.page.waitForTimeout(40000);
     // =========================
     const filePath = path.resolve(
       process.cwd(),
-      'utils/files/MUHAMMAD-TALHA-SHAFIQ-QA.docx'
+      'utils/files/MUHAMMADTalha.docx'
     );
 
     // Upload file
