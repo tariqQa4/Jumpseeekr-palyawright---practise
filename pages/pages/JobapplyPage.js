@@ -1,8 +1,9 @@
-class jobApplyflow {
+class JobapplyPage {
     constructor(page) {
         this.page = page;
     }
-    async goto() {
+
+    async applyJob() {
         await this.page.goto('https://qa.jumprecruiter.com/');
         await this.page.getByRole('button', { name: 'x' }).click();
         // await this.page.getByRole('link', { name: 'Jobs', exact: true }).click();
@@ -42,3 +43,5 @@ class jobApplyflow {
     }
 
 }
+
+export default JobapplyPage;
