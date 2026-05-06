@@ -75,7 +75,7 @@ class DashboardPage extends BasePage {
   // await this.page.getByPlaceholder('Select location')
   //   .fill('New York');
 
-  await this.page.getByRole('radio', { name: /daily/i }).click();
+  // await this.page.getByRole('radio', { name: /daily/i }).click();
 
   await this.page.getByRole('button', { name: /set job alert/i }).click();
 
