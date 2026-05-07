@@ -15,7 +15,7 @@ class SignupPage {
     await this.page.locator('.MuiInputBase-root').first().click();
     await this.page.getByRole('textbox', { name: 'Type email address' }).fill(email);
     await this.page.getByRole('textbox', { name: 'Your full name' }).click();
-    await this.page.getByRole('textbox', { name: 'Your full name' }).fill('test user');
+    await this.page.getByRole('textbox', { name: 'Your full name' }).fill('test Test');
     await this.page.getByRole('textbox', { name: 'Create a secure password' }).click();
     await this.page.getByRole('textbox', { name: 'Create a secure password' }).fill(password);
     await this.page.getByRole('textbox', { name: 'Re-enter password' }).click();
