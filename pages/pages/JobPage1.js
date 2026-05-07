@@ -45,6 +45,7 @@ class JobPage1 {
      await this.page.getByRole('button', { name: 'Next' }).click();
     await this.page.waitForTimeout(1000);
     await this.page.getByRole('button', { name: 'Submit' }).click();
+      await this.page.waitForTimeout(1000);
     await this.page.getByRole('button', { name: 'Back to job Search' }).click();
     // =========================a
     // Screening question (safe handling)
