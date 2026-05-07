@@ -24,6 +24,23 @@ class SignupPage {
     await this.page.getByRole('checkbox', { name: 'I agree to the Terms of Use' }).check();
     await this.page.getByRole('button', { name: 'Create account' }).click();
     await this.page.waitForTimeout(2000);
+     await this.page.getByRole('button', { name: 'Accept' }).click();
+    await this.page.getByRole('button', { name: '👤 My Profile' }).click();
+await this.page.getByRole('combobox', { name: 'Select your designation' }).click();
+await this.page.getByText('Senior Associate').click();
+  
+    await this.page.getByRole('textbox', { name: '1 (702) 123-' }).click();
+   
+    await this.page.getByRole('textbox', { name: '1 (702) 123-' }).fill('+1 (234) 567-8900');
+    await this.page.getByRole('combobox', { name: 'Type your country' }).click();
+    await this.page.getByRole('combobox', { name: 'Type your country' }).fill('pakistan');
+    await this.page.getByRole('combobox', { name: 'Type your country' }).press('Enter');
+    await this.page.getByText('Pakistan').click();
+    await this.page.getByRole('combobox', { name: 'Type city, state, zip code' }).click();
+    await this.page.getByText('Akutan, AK,').click();
+    await this.page.locator('#basic-information').getByRole('button', { name: 'Save Changes' }).click();
+
+    await this.page.waitForTimeout(2000);
     await this.page.getByRole('link', { name: 'Jump Recruiter Logo' }).click();
     await this.page.waitForTimeout(1000);
     // await this.page.getByRole('link', { name: 'Jobs', exact: true }).click();

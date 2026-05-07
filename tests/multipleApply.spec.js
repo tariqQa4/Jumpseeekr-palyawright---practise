@@ -21,9 +21,7 @@ test('Multiple users signup and apply job', async ({ browser }) => {
 
     await page.setViewportSize({ width: 1536, height: 864 });
 
-    // =========================
-    // ✅ STEP 1: Get Job ID (SAFE + FALLBACK)
-    // =========================
+  
     let jobId = '899'; // fallback job id
 
     try {
@@ -65,6 +63,6 @@ test('Multiple users signup and apply job', async ({ browser }) => {
     await jobPage.openJob(jobId);
     await jobPage.applyJob();
 
-    await context.close();
+    // await context.close();
   }
 });
