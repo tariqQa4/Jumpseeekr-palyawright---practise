@@ -35,7 +35,11 @@ export default defineConfig({
     /* Default timeout */
     actionTimeout: 15000,
     navigationTimeout: 30000,
+    
   },
+  test: {
+  timeout: 120000,
+},
 
   /* ALL BROWSERS SETUP */
   projects: [

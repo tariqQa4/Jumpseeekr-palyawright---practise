@@ -5,6 +5,7 @@ class SignupPage {
   }
 
   async goto() {
+    // awaitthis.page.waitForTimeout(1000);
     await this.page.goto('https://qa.jumprecruiter.com/');
   }
 
