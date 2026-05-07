@@ -15,7 +15,7 @@ class SignupPage {
     await this.page.locator('.MuiInputBase-root').first().click();
     await this.page.getByRole('textbox', { name: 'Type email address' }).fill(email);
     await this.page.getByRole('textbox', { name: 'Your full name' }).click();
-    await this.page.getByRole('textbox', { name: 'Your full name' }).fill('test');
+    await this.page.getByRole('textbox', { name: 'Your full name' }).fill('test user');
     await this.page.getByRole('textbox', { name: 'Create a secure password' }).click();
     await this.page.getByRole('textbox', { name: 'Create a secure password' }).fill(password);
     await this.page.getByRole('textbox', { name: 'Re-enter password' }).click();
@@ -26,12 +26,13 @@ class SignupPage {
     await this.page.waitForTimeout(2000);
      await this.page.getByRole('button', { name: 'Accept' }).click();
     await this.page.getByRole('button', { name: '👤 My Profile' }).click();
-await this.page.getByRole('combobox', { name: 'Select your designation' }).click();
+
+await this.page.getByPlaceholder('Select your designation').fill('Senior Associate');
 await this.page.getByText('Senior Associate').click();
   
     await this.page.getByRole('textbox', { name: '1 (702) 123-' }).click();
    
-    await this.page.getByRole('textbox', { name: '1 (702) 123-' }).fill('+1 (234) 567-8900');
+    await this.page.getByRole('textbox', { name: '1 (702) 123-' }).fill('+1 702 123 4567');
     await this.page.getByRole('combobox', { name: 'Type your country' }).click();
     await this.page.getByRole('combobox', { name: 'Type your country' }).fill('pakistan');
     await this.page.getByRole('combobox', { name: 'Type your country' }).press('Enter');
