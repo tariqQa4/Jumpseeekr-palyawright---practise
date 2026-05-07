@@ -22,7 +22,7 @@ test('Multiple users signup and apply job', async ({ browser }) => {
     await page.setViewportSize({ width: 1536, height: 864 });
 
   
-    let jobId = '899'; // fallback job id
+    let jobId = '899'; // fallback job idwith 
 
     try {
       const response = await page.request.get(
@@ -51,15 +51,11 @@ test('Multiple users signup and apply job', async ({ browser }) => {
       console.log('API ERROR, using fallback jobId:', error.message);
     }
 
-    // =========================
-    // ✅ STEP 2: Signup
-    // =========================
+   
     await signupPage.goto();
     await signupPage.signup(email, PASSWORD);
 
-    // =========================
-    // ✅ STEP 3: Open Job + Apply
-    // =========================
+  
     await jobPage.openJob(jobId);
     await jobPage.applyJob();
 

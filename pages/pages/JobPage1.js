@@ -37,7 +37,7 @@ class JobPage1 {
 
     // Upload file
     await this.page.locator('input[type="file"]').setInputFiles(filePath);
-    await this.page.waitForTimeout(4000);
+    // await this.page.waitForTimeout(4000);
     // Next button
     await this.page.getByRole('button', { name: 'Next' }).click();
     // await this.page.waitForTimeout(1000);
