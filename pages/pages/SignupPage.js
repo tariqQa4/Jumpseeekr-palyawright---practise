@@ -26,7 +26,8 @@ class SignupPage {
     await this.page.waitForTimeout(2000);
      await this.page.getByRole('button', { name: 'Accept' }).click();
     await this.page.getByRole('button', { name: '👤 My Profile' }).click();
-
+ await this.page.waitForTimeout(1000);
+ await this.page.getByPlaceholder('Type your first and last name').fill('test Test');
 await this.page.getByPlaceholder('Select your designation').fill('Senior Associate');
 await this.page.getByText('Senior Associate').click();
   
