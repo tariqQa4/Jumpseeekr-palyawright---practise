@@ -8,7 +8,7 @@ test.setTimeout(120000);
 
 test('Multiple users signup and apply job', async ({ browser }) => {
 
-  const USERS_COUNT = 2;
+  const USERS_COUNT = 5;
   const PASSWORD = 'test1234';
 
   for (let i = 0; i < USERS_COUNT; i++) {
