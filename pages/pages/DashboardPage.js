@@ -9,8 +9,8 @@ class DashboardPage extends BasePage {
 
   // 1️⃣ click profile
   async myProfile() {
-    await this.myProfileBtn.click();
-         await this.page.getByRole('button', { name: 'Accept' }).click();
+    await this.myProfileBtn.click(); 
+        //  await this.page.getByRole('button', { name: 'Accept' }).click();
   }
 
   // 2️⃣ scroll actions (CREATE THIS — missing in your code)
