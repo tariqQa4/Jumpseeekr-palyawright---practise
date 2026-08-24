@@ -11,13 +11,13 @@ class JobapplyPage{
 
             await this.page.getByRole('button', { name: 'Sign In' }).click();
             await this.page.getByRole('textbox', { name: 'you@email.com' }).click();
-            await this.page.getByRole('textbox', { name: 'you@email.com' }).fill('seeker@zudpck.com');
+            await this.page.getByRole('textbox', { name: 'you@email.com' }).fill('seeker1@mailinator.com');
             await this.page.locator('.MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiFilledInput-adornedEnd').click();
-            await this.page.getByRole('textbox', { name: 'Type Password' }).fill('test1234');
+            await this.page.getByRole('textbox', { name: 'Type Password' }).fill('Test@1234');
             await this.page.locator('form').getByRole('button', { name: 'Sign In' }).click();
             await this.page.getByRole('link', { name: 'Jobs', exact: true }).click();
             await this.page.getByRole('combobox', { name: 'Search by Job, Keyword, or' }).click();
-            await this.page.getByRole('combobox', { name: 'Search by Job, Keyword, or' }).fill('qa engineer');
+            await this.page.getByRole('combobox', { name: 'Search by Job, Keyword, or' }).fill('Software Engineer');
             await this.page.getByRole('button', { name: 'Search Jobs' }).click();
             await this.page.locator('.border.border-gray-700.rounded-md').first().click();
             await this.page.getByRole('button', { name: 'Apply Now' }).first().click();
