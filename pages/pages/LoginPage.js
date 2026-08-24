@@ -33,27 +33,27 @@ class LoginPage {
     await this.page.goto('https://stagging.jumprecruiter.us/dashboard?tab=my-profile');
 
     // click on job alerts
-    await this.page.click('a:has-text("Job Alerts")');
-
-    // click on profile
-    await this.page.click('a:has-text("Profile")');
+    await this.page.getByRole('button', { name: 'Job Alerts' }).click();
+await this.page.waitForTimeout(1000);
+   
 
     // click on  saved jobs
-    await this.page.click('a:has-text("Saved Jobs")');
+  await this.page.getByRole('button', { name: 'Saved Jobs' }).click();
+
+await this.page.waitForTimeout(1000);
 
     // click on  applications
-    await this.page.click('a:has-text("Applications")');
-    
+    await this.page.getByRole('button', { name: 'Applications' }).click();
+    await this.page.waitForTimeout(1000);
     // click on  overview
-    await this.page.click('a:has-text("Overview")');
-
+   await this.page.getByRole('button', { name: 'Overview' }).click();
+await this.page.waitForTimeout(1000);
     // click on  settings
-    await this.page.click('a:has-text("Settings")');  
-
-
+    await this.page.getByRole('button', { name: 'Settings' }).click();
+await this.page.waitForTimeout(1000);
     // click on homepage /logo 
-    await this.page.click('a:has-text("JumpRecruiter")');
-    
+   await this.page.getByAltText('Jump Recruiter Logo').click();
+
   } 
 
 }
