@@ -29,16 +29,16 @@ class HomePage  extends BasePage {
 
   async homepagescroll() {
     await this.page.mouse.wheel(0, 1000);
-  //   // ✅ scroll bottom
-  //   await this.page.evaluate(() => {
-  //     window.scrollTo(0, document.body.scrollHeight);
-  //   }); 
-  //       await this.page.waitForTimeout(1000);   
-  //   // ✅ scroll top
-  //   await this.page.evaluate(() => {
-  //     window.scrollTo(0, 0);l
-  //   });
-  //       await this.page.waitForTimeout(1000);   
+    // ✅ scroll bottom
+    await this.page.evaluate(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }); 
+        await this.page.waitForTimeout(1000);   
+    // ✅ scroll top
+    await this.page.evaluate(() => {
+      window.scrollTo(0, 0);l
+    });
+        await this.page.waitForTimeout(1000);   
   }
 }
 

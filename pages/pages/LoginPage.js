@@ -25,7 +25,37 @@ class LoginPage {
 
   // Click Sign In
   await this.page.locator('.login-submit-btn').click();
+  
   }
+
+  // dashboard page
+  async dashboard() {
+    await this.page.goto('https://stagging.jumprecruiter.us/dashboard?tab=my-profile');
+
+    // click on job alerts
+    await this.page.click('a:has-text("Job Alerts")');
+
+    // click on profile
+    await this.page.click('a:has-text("Profile")');
+
+    // click on  saved jobs
+    await this.page.click('a:has-text("Saved Jobs")');
+
+    // click on  applications
+    await this.page.click('a:has-text("Applications")');
+    
+    // click on  overview
+    await this.page.click('a:has-text("Overview")');
+
+    // click on  settings
+    await this.page.click('a:has-text("Settings")');  
+
+
+    // click on homepage /logo 
+    await this.page.click('a:has-text("JumpRecruiter")');
+    
+  } 
+
 }
 
 export default LoginPage;
