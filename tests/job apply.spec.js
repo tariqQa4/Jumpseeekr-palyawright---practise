@@ -8,7 +8,7 @@ test('apply for job', async ({ page }) => {
 
     await page.setViewportSize({ width: 1536, height: 864 });
     await login.goto();
-    await login.login('seeker@zudpck.com', 'test1234');
+    await login.login('seeker1@mailinator.com', 'Test@1234');
     await jobapply.applyJob();
 
 

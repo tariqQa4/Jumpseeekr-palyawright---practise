@@ -21,7 +21,7 @@ class JobPage  extends BasePage {
 
 async jobsearch() {
 
-        await this.page.getByPlaceholder('Search by Job, Keyword, or Company').fill('QA Engineer');
+        await this.page.getByPlaceholder('Search by Job, Keyword, or Company').fill('Software Engineer');
         await this.page.waitForTimeout(1000);
         await this.page.getByRole('button', { name: 'Search Jobs' }).click(); 
         // add assertion to verify search results
