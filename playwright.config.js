@@ -25,7 +25,7 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: 'https://qa.jumprecruiter.com/',
+    baseURL: 'https://stagging.jumprecruiter.us/',
 
     /* Modern defaults */
     trace: 'on-first-retry',

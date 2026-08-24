@@ -8,7 +8,7 @@ class JobPage  extends BasePage {
     }
 
     async goto() {
-      await this.page.goto('https://qa.jumprecruiter.com/');
+      await this.page.goto('https://stagging.jumprecruiter.us/');
     await this.page.getByRole('link', { name: 'Jobs', exact: true }).click();
       await this.page.waitForTimeout(1000);
       this.scrollDown();

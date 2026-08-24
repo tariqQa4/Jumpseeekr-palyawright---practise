@@ -6,7 +6,7 @@ class HomePage  extends BasePage {
   }
 
   async goto() {
-    await this.page.goto('https://qa.jumprecruiter.com/');
+    await this.page.goto('https://stagging.jumprecruiter.us/');
     await this.page.waitForTimeout(1000);
     await this.page.mouse.wheel(0, 2500);
 

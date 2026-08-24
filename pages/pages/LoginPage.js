@@ -7,7 +7,7 @@ class LoginPage {
   }
 
   async goto() {
-    await this.page.goto('https://qa.jumprecruiter.com/');
+    await this.page.goto('https://stagging.jumprecruiter.us/');
     this.acceptBtn = 'button:has-text("Accept")';
     await this.page.click(this.acceptBtn);
 

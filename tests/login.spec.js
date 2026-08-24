@@ -7,5 +7,5 @@ await page.setViewportSize({ width: 1536, height: 864 });
   await login.goto();
   await login.login('seeker@zudpck.com', 'test1234');
 
-  await expect(page).toHaveURL('https://qa.jumprecruiter.com/dashboard?tab=my-profile');
+  await expect(page).toHaveURL('https://stagging.jumprecruiter.us/dashboard?tab=my-profile');
 });

@@ -7,7 +7,7 @@ class JobPage1 {
   }
 
   async openJob(jobId) {
-    await this.page.goto(`https://qa.jumprecruiter.com/job-detail/${jobId}`);
+    await this.page.goto(`https://stagging.jumprecruiter.us/job-detail/${jobId}`);
   }
 
   async applyJob() {

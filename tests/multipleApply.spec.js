@@ -32,7 +32,7 @@ test('Multiple users signup and apply job', async ({ browser }) => {
 
       try {
         const response = await page.request.get(
-          'https://qa.jumprecruiter.com/api/jobs'
+          'https://stagging.jumprecruiter.us/api/jobs'
         );
 
         console.log('API STATUS:', response.status());

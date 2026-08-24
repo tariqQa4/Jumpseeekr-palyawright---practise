@@ -4,7 +4,7 @@ class JobapplyPage{
     }
 
     async applyJob() {
-        await this.page.goto('https://qa.jumprecruiter.com/');
+        await this.page.goto('https://stagging.jumprecruiter.us/');
         // await this.page.getByRole('button', { name: 'x' }).click();
         await this.page.getByRole('link', { name: 'Jobs', exact: true }).click();
             await this.page.waitForTimeout(1000);
