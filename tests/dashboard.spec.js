@@ -9,10 +9,10 @@ test('dashboard test with login + profile scroll', async ({ page }) => {
   const dashboard = new DashboardPage(page);
 await page.setViewportSize({ width: 1536, height: 864 });
   // 1️⃣ Go to login page
-  await page.goto('https://qa.jumprecruiter.com');
+  await page.goto('https://stagging.jumprecruiter.us/');
 
   // 2️⃣ Login
-  await login.login('seeker@zudpck.com', 'test1234');
+  await login.login('seeker1@mailinator.com', 'Test@1234');
 
   // 3️⃣ Wait for dashboard
   await page.waitForURL(/dashboard/);

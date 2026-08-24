@@ -70,7 +70,7 @@ class DashboardPage extends BasePage {
     // create job alert
     await this.page.click('button:has-text("Create New Alert")');
 
-   await this.page.getByPlaceholder('Select designation')
+   await this.page.getByPlaceholder('Select job title')
     .fill('QA Engineer');
 
   // await this.page.getByPlaceholder('Select location')
